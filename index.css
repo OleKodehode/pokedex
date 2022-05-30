@@ -1,0 +1,56 @@
+.pokedex-input{
+    width: 50%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.box{
+    margin: 0 auto;
+    border: solid red 2px;
+    width:280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h3{
+    text-align: end;
+    margin-top: -5rem;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nav-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 250px;
+
+}
+
+#index-number{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
