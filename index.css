@@ -50,9 +50,11 @@ p{
 }
 
 #index-number{
-    height: 3rem;
-    width: 3rem;
+    min-height: 3rem;
+    min-width: 3rem;
     border-radius: 50%;
+    margin-left: 2rem;
+    transform: rotate(45deg);
 }
 
 .hidden{
