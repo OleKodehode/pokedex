@@ -1,15 +1,24 @@
 const pokeGenerator = document.querySelector('#poke-index')
 const indexNr = document.querySelector('#index-number')
 
-indexNr.addEventListener('click', fetchPokemon)
+
+indexNr.addEventListener('click', fetchPokemon, hideIcons)
 
 pokeGenerator.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         fetchPokemon()
+        hideIcons
       }
     });
 
+function hideIcons() {
+    document.querySelectorAll(".hidden").forEach(function (element) {
+        element.remove()
+      });
+    }
+
 async function fetchPokemon() {
+    hideIcons()
     
     const boxdiv = document.querySelector('.box')
     const navBtn = document.querySelector('.nav-btn')
@@ -29,8 +38,11 @@ async function fetchPokemon() {
     
     const data = await response.json()
     console.log(data);
+
+
     createPokemon(data)
 }
+
 
 function createPokemon(data) {
 

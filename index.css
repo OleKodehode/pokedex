@@ -54,3 +54,8 @@ p{
     width: 3rem;
     border-radius: 50%;
 }
+
+.hidden{
+    display: flex;
+    justify-content: center;
+}
